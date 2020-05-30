@@ -10,10 +10,18 @@ The class should have two static functions: fn() executes the definition of the 
   
 Parameter options -- QuadraticCost, CrossEntropy, Loglikelihood (LL cost function should really be used when 'act_output' (the activation function of the output layer) = 'Softmax'. )
   
- - ### Activation functions
+ - ### Activation functions (act_hidden)
 This parameter specifies the activation function for nodes on all hidden layers, but EXCLUDING the output layer. Each one must be implemented as a class. The class should have two functions: a static method fn() executes the definition of the function to compute the node activation value, and a class method derivative() executes the function's derivative to compute the error during learning.
  
 Parameter options  -- Sigmoid, Tanh, ReLU, Softmax
+
+- ### Activation functions (act_output)
+This parameter specifies the activation function for nodes on the output layer. Tanh is selected as the activation function for the output layer:
+
+  - Because the output value will be between 1 and -1 [instead of 1 and 0], the only cost function that goes with Tanh is the quadratic cost. Therefore, if the cost function was set to anything besides 'QuadraticCost', change/overwrite the cost function to QuadraticCost and print a warning (to the user, e.g. "Tanh only accepts 'QuadraticCost' cost function.  Changing to QuadraticCost").  This is implemented, in set_parameters().
+ 
+  - In the network startup code "NN_network2.py", some code is added (in SGD()) that changes the dataset when the output layer's activation is Tanh, in particular to make the target y values to be 1 or -1 (instead of 1 or 0). 
+
   
 - ### Regularization
 This parameter specifies the regularization method. The selected method is applied to all hidden layers and the output layer. The regularization is relevant at two places in the backprop algorithm: During training, when weights are adjusted at the end of a mini-bath -- the function update_mini_batch(). During evaluation, when the cost is computed -- the function total_cost().
