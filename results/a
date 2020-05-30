@@ -1,1 +1,3 @@
-
+A result with filename SigSigQuad implies the act_hidden = Sigmoid, act_output = Sigmoid, cost = QuadraticCost, 
+regularization = default, lmbda = 0.0, dropout =0.0. So, in essense SigSigQuad implies only three variables were turned on. 
+Similarly, for SigSigQuadLmbda0.5 implies act_hidden, act_output, cost, and lambda were tuned. 
