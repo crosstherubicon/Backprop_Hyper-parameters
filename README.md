@@ -48,4 +48,4 @@ Modified functions
 Using the application code, you should be able to generate the results for each combinations as in the results folder using  "iris.csv" and the "iris-423.dat". For each experiment, train the network using "iris-train-1.csv" for 15 epochs and test it using "iris-test-1.csv".
 
 
-For dropoutpercentage, use "iris4-20-7-3.dat"
+For dropoutpercentage, use "iris4-20-7-3.dat".The results may vary for these experiments because dropout nodes are randomly (but probabilistically) chosen.
