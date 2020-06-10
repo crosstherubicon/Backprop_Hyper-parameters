@@ -3,6 +3,12 @@ Understanding hyperparameters of neural networks.
 
 [Prerequisite: (1) Theoretical understanding of cost functions, activation functions and partial derivatives. (2) Soli knowledge of how NN works. (3)Python programming. (4) Deep Learning alogrithms and technqiues.]
 
+<br>
+<p align="center">
+<img src = "dataset/DNN.png" "dataset/DNN.png" width = "500" height = "300">
+ </p>
+<br>
+
 On this code, we are tuning several hyperparameters and modifying functions. Both functions receive ''a'' (activation) and ''y'' (target output), which are from one data instance and represented by column vectors.
 Fn() returns a scalar, while derivative() returns a column vector containing the cost derivative for each node in the output layer; no multiplication by the derivative of the activation function.The hyperparameters are 
 
