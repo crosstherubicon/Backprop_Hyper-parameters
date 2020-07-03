@@ -17,6 +17,7 @@ Fn() returns a scalar, while derivative() returns a column vector containing the
 - feedforward()
 - backprop()
 - update_mini_batch()
+- total_cost()
 
 
 - ### Cost functions
