@@ -19,6 +19,8 @@ Fn() returns a scalar, while derivative() returns a column vector containing the
 - update_mini_batch()
 - total_cost()
 
+Other functions additionally to implement Dropout.
+
 
 - ### Cost functions
 This parameter specifies the cost function. Each one must be implemented as a class. 
