@@ -13,6 +13,8 @@ On this code, we are tuning several hyperparameters and modifying functions. Bot
 Fn() returns a scalar, while derivative() returns a column vector containing the cost derivative for each node in the output layer; no multiplication by the derivative of the activation function.The hyperparameters are 
 
 ### Functions implied
+- set_parameters()
+
 
 - ### Cost functions
 This parameter specifies the cost function. Each one must be implemented as a class. 
