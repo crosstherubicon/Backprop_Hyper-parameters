@@ -10,7 +10,7 @@ Understanding and tuning hyperparameters of neural networks.
 <br>
 
 On this code, we are tuning several hyperparameters and modifying functions. Both functions receive ''a'' (activation) and ''y'' (target output), which are from one data instance and represented by column vectors.
-Fn() returns a scalar, while derivative() returns a column vector containing the cost derivative for each node in the output layer; no multiplication by the derivative of the activation function.The hyperparameters are 
+Fn() returns a scalar, while derivative() returns a column vector containing the cost derivative for each node in the output layer; no multiplication by the derivative of the activation function.The hyperparameters are:
 
 ### Functions implied
 - set_parameters()
