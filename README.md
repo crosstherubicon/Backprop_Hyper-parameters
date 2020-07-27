@@ -1,5 +1,5 @@
 # Brackprop-Hyperparameters
-Understanding and tuning hyperparameters of neural networks
+Understanding and tuning hyperparameters of neural networks.
 
 [Prerequisite: (1) Theoretical understanding of cost functions, activation functions and partial derivatives. (2) Soli knowledge of how NN works. (3)Python programming. (4) Deep Learning alogrithms and technqiues.]
 
