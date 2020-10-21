@@ -51,7 +51,7 @@ Parameter options  -- L1, L2
 This parameter specifies the percentage of dropout. The value is between 0 and 1.  For example, 0.4 means 40% of the nodes on a layer are dropped or made inaccessible. Dropout consists in randomly setting a fraction rate of units in a layer to 0 at each update during training time, which helps prevent overfitting. Assume the same dropout percentage is applied to all hidden layers. Dropout should not be applied to input or output layer. 
   - Dropout is applied during the training phase only.  No dropout is applied during the testing/evaluation phrase.
   - Use the same dropout nodes during one mini-batch.  That means you have to store which nodes were used/dropped somewhere else. Think about it and implement in your way.
-  - Scale the output values of the layer.  
+  - Scale the output values of the layers.  
 
 Then during the backward propagation phase, you apply the mask to the delta of a hidden layer (dh1). This is necessary because, since a dropout mask is applied as an additional multiplier function after the activation function, it essentially became a constant coefficient of the activation function (i.e., c*a(z)), and shows up in the derivative of that function --  Let f(z) = c*a(z), then f'(z) = c*a'(z).
   
